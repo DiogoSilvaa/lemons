@@ -1,8 +1,12 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
-  theme: {
+  content: [
+    // app content
+    `src/**/*.{js,ts,jsx,tsx}`,
+    // include packages if not transpiling
+    "../../packages/**/*.{js,ts,jsx,tsx}",
+  ],  theme: {
     extend: {
       backgroundImage: {
         "glow-conic":

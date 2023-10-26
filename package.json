@@ -10,12 +10,11 @@
     "eslint": "^8.48.0",
     "prettier": "^3.0.3",
     "tsconfig": "*",
-    "turbo": "latest"
+    "turbo": "^1.10.16"
   },
   "name": "travelai",
   "packageManager": "yarn@1.22.17",
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "apps/*"
   ]
 }

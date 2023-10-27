@@ -1,2 +1,3 @@
 // component exports
-export { Button } from './button'
+export { Button } from "./components/ui/button";
+export { Alert } from "./components/ui/alert";

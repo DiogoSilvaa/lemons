@@ -15,7 +15,12 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
-    "strictNullChecks": true
+    "paths": {
+      "@/*": ["./*"],
+      "@ui/*": ["../../packages/ui/*"],
+      "@ui/components/*": ["../../packages/ui/components/ui/*"],
+      "@ui/components/ui/*": ["../../packages/ui/components/ui/*"]
+    }
   },
   "exclude": ["node_modules"]
-}
+} 

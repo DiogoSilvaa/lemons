@@ -21,7 +21,7 @@ importers:
         specifier: latest
         version: 1.10.16
 
-  apps/web:
+  apps/travelai:
     dependencies:
       '@next/eslint-plugin-next':
         specifier: ^12.3.0

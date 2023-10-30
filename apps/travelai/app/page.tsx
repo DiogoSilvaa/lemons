@@ -1,7 +1,8 @@
 import { Button } from "@ui/components/button";
 import { Alert, AlertTitle, AlertDescription } from "@ui/components/alert";
+import { FC } from "react";
 
-export default function Page(): JSX.Element {
+const Page: FC = () => {
   return (
     <div>
       <p>Hello world</p>
@@ -12,4 +13,6 @@ export default function Page(): JSX.Element {
       </Alert>
     </div>
   );
-}
+};
+
+export default Page;

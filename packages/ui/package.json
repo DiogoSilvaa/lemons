@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts*\"",
+    "lint": "eslint .",
     "ui:add": "pnpm dlx shadcn-ui@latest add"
   },
   "devDependencies": {

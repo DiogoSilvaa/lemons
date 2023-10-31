@@ -1,0 +1,21 @@
+name: Check codebase
+on: [pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install pnpm
+        run: npm -g install pnpm
+      - name: Instal packages
+        run: pnpm install
+      - name: Run eslint
+        run: pnpm lint
+      - name: Build apps and packages
+        run: pnpm build
+      - name: Run unit tests
+        run: pnpm test

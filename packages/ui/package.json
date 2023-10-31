@@ -7,6 +7,15 @@
     "ui:add": "pnpm dlx shadcn-ui@latest add",
     "test": "jest"
   },
+  "dependencies": {
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.6.0",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.244.0",
+    "tailwind-merge": "^1.13.2",
+    "tailwindcss-animate": "^1.0.6"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.7",
     "@types/node": "^17.0.12",
@@ -21,14 +30,5 @@
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2",
     "ts-jest": "^29.1.1"
-  },
-  "dependencies": {
-    "@radix-ui/react-checkbox": "^1.0.4",
-    "@radix-ui/react-slot": "^1.0.2",
-    "class-variance-authority": "^0.6.0",
-    "clsx": "^1.2.1",
-    "lucide-react": "^0.244.0",
-    "tailwind-merge": "^1.13.2",
-    "tailwindcss-animate": "^1.0.6"
   }
 }

@@ -1,0 +1,11 @@
+name: Run unit tests
+on: [pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Installing packages
+      run: pnpm
+    - name: Running tests
+      run: pnpm test

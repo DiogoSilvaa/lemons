@@ -18,7 +18,7 @@ jobs:
         run: pnpm install
       - name: Run eslint
         run: pnpm lint
-      - name: Build apps and packages
+      - name: Build apps
         run: pnpm build
       - name: Run unit tests
         run: pnpm test

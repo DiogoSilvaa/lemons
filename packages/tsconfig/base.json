@@ -22,5 +22,6 @@
       "@ui/components/ui/*": ["../../packages/ui/components/ui/*"]
     }
   },
-  "exclude": ["node_modules"]
-} 
+  "exclude": ["node_modules"],
+  "types": ["@testing-library/jest-dom"]
+}

@@ -1,0 +1,24 @@
+name: Check codebase
+on: [pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install pnpm
+        run: npm -g install pnpm
+      - name: Instal packages
+        run: pnpm install
+      - name: Run eslint
+        run: pnpm lint
+      - name: Build apps
+        run: pnpm build
+      - name: Run unit tests
+        run: pnpm test

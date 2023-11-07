@@ -1,7 +1,11 @@
 import { FC } from "react"
+import { serverClient } from "./_trpc/serverClient"
 import { Button, Input, Typography } from "ui"
 
-const Page: FC = () => {
+const Page: FC = async () => {
+  const x = await serverClient.getQuestion()
+  console.log(x)
+
   return (
     <div className='flex flex-col bg-slate-700 h-full  w-full items-center '>
       <Typography

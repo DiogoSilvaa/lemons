@@ -12,6 +12,8 @@
   "dependencies": {
     "@trpc/server": "^10.43.1",
     "superjson": "^2.2.0",
-    "database": "workspace:*"
+    "database": "workspace:*",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*"
   }
 }
